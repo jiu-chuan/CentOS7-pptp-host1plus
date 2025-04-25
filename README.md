@@ -8,8 +8,13 @@ mv *.repo bak/
 curl -O  http://mirrors.aliyun.com/repo/Centos-7.repo
 sudo yum clean all
 sudo yum makecache
-
 ```
+
+## Install wget
+```
+yum install -y wget
+```
+
 
 ## Run
 ```
