@@ -4,7 +4,7 @@
 ```
 mkdir /etc/yum.repos.d/bak
 mv -f /etc/yum.repos.d/*.repo /etc/yum.repos.d/bak/
-curl http://mirrors.aliyun.com/repo/Centos-7.repo -o /etc/yum.repos.d/
+curl http://mirrors.aliyun.com/repo/Centos-7.repo -o /etc/yum.repos.d/Centos-7.repo
 sudo yum clean all
 sudo yum makecache
 ```
