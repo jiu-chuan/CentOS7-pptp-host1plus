@@ -2,10 +2,9 @@
 
 ## Run Change source
 ```
-cd /etc/yum.repos.d/
-mkdir bak
-mv *.repo bak/
-curl -O  http://mirrors.aliyun.com/repo/Centos-7.repo
+mkdir /etc/yum.repos.d/bak
+mv -f *.repo bak/
+curl http://mirrors.aliyun.com/repo/Centos-7.repo -o /etc/yum.repos.d/
 sudo yum clean all
 sudo yum makecache
 ```
