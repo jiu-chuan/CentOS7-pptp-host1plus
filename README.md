@@ -3,7 +3,7 @@
 ## Run Change source
 ```
 mkdir /etc/yum.repos.d/bak
-mv -f *.repo bak/
+mv -f /etc/yum.repos.d/*.repo /etc/yum.repos.d/bak/
 curl http://mirrors.aliyun.com/repo/Centos-7.repo -o /etc/yum.repos.d/
 sudo yum clean all
 sudo yum makecache
